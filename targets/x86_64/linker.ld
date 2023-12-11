@@ -1,3 +1,6 @@
+
+/*
+
 /*linker script*/
 
 ENTRY(start) /*especificar el punto de entrada*/
@@ -16,3 +19,6 @@ SECTIONS /* esta parte se usa para especificar el layout de la memoria*/
         *(.text)
     }
 }
+
+ 
+
