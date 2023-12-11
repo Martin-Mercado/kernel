@@ -1,6 +1,4 @@
 
-/*
-
 /*linker script*/
 
 ENTRY(start) /*especificar el punto de entrada*/
