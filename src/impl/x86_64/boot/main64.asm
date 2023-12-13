@@ -1,4 +1,5 @@
 global long_mode_start
+external kernel_main
 
 section .text
 
@@ -11,7 +12,5 @@ long_mode_start:
     mov fs, ax
     mov gs, ax
 
-     ;imprimir "ok"
-    mov dword [0xb8000], 0x2f4b2f4f ;la memoria de video empiza en 0xb8000, 0x2f4b2f4f es OK
-
+    call kernel_main()
     hlt
