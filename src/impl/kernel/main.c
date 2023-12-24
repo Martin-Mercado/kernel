@@ -1,4 +1,4 @@
-#include "print.h"
+#include "/home/super/Documents/CKernel/src/intf/print.h"
 
 void kernel_main() {
     print_clear();
