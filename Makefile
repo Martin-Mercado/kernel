@@ -27,7 +27,7 @@ $(x86_64_asm_object_files): build/x86_64/%.o : src/impl/x86_64/%.asm
 	mkdir -p $(dir $@) && \
 	nasm -f elf64 $< -o $@
 
-# PHONY -> asegura que siempre se ejecute auqnue hata archivos con el mismo nombre
+# PHONY -> asegura que siempre se ejecute aunque haya archivos con el mismo nombre
 .PHONY: build-x86_64
 build-x86_64: $(kernel_object_files) $(x86_64_object_files)
 	mkdir -p dist/x86_64 && \
