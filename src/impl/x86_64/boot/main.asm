@@ -1,5 +1,5 @@
 ;punto de entrada para el SO
-global  start
+global start
 extern long_mode_start
 
 section .text
